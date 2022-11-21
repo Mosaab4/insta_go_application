@@ -1,4 +1,4 @@
-# Ruby Task
+# Ruby Task (Golang App)
 
 ## Getting Started
 
