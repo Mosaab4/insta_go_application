@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  log-service:
+    container_name: log-service
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+    working_dir: /app
+    ports:
+      - "5002:5002"
+    networks:
+      - go-network
+
+networks:
+  go-network:
+    name: instabug_task
+    external: true
