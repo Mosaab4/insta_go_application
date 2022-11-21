@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  log-service:
-    container_name: log-service
+  insta-go:
+    container_name: insta_m_go_app
     build:
       context: .
       dockerfile: ./docker/Dockerfile
